@@ -1,0 +1,206 @@
+/* General styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    overflow-y: scroll;
+    background: linear-gradient(135deg, #0a192f, #1a365d);
+    color: white;
+}
+
+/* Container styling */
+.container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+}
+
+/* Form container (input section) */
+.form-container {
+    width: 70%;
+    background: linear-gradient(145deg, #2a5298, #1a365d);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    margin-bottom: 50px;
+}
+
+/* Header styling */
+h1 {
+    text-align: center;
+    background: linear-gradient(145deg, #ff6f61, #ffcc00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Form element styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Labels styling */
+label {
+    font-size: 1.5rem; /* Increased font size */
+    font-weight: bold; /* Bold text */
+    color: #ffcc00; /* Bright yellow for better visibility */
+    margin-bottom: 15px; /* Increased spacing */
+    width: 60%;
+    text-align: left; /* Align text to the left */
+}
+
+/* Input fields styling */
+input, select {
+    width: 60%;
+    padding: 15px; /* Increased padding */
+    font-size: 1.2rem; /* Increased font size */
+    border: 2px solid #4a90e2; /* Thicker border */
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 20px; /* Increased spacing */
+    background-color: #ffffff; /* White background */
+    color: #333; /* Dark text for contrast */
+}
+
+/* Button styling */
+button {
+    width: 60%;
+    padding: 15px; /* Increased padding */
+    font-size: 1.5rem; /* Increased font size */
+    font-weight: bold; /* Bold text */
+    background-color: #4a90e2; /* Bright blue */
+    color: white;
+    border: none;
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #357abd; /* Darker blue on hover */
+    transform: translateY(-3px); /* Slight lift effect */
+}
+
+/* Output visualization styling */
+#output {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 20px;
+}
+
+.visualization-section {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.page-table-section {
+    flex: 1;
+}
+
+/* Page frames and table updates */
+#visualization div,
+.page-table div {
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background: linear-gradient(145deg, #e0f7fa, #b2ebf2);
+    color: #004c4c;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#visualization div:hover,
+.page-table div:hover {
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Table styling for page table visualization */
+.page-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.page-table table th,
+.page-table table td {
+    padding: 10px;
+    border: 1px solid #004c4c;
+    text-align: center;
+    background: #f0f8ff;
+    color: #1a365d;
+}
+
+.page-table table th {
+    background: #4a90e2;
+    color: white;
+    font-size: 1.2rem; /* Increased font size for table headers */
+}
+
+/* Result message styling */
+.page-table p {
+    font-size: 1.5rem; /* Increased font size for result message */
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15px;
+    background: linear-gradient(145deg, #ff6f61, #ffcc00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Additional styling for better visibility */
+input::placeholder {
+    font-size: 1.1rem; /* Larger placeholder text */
+    color: #888; /* Light gray placeholder text */
+}
+
+select {
+    appearance: none; /* Remove default arrow */
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%234a90e2'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .form-container {
+        width: 90%; /* Wider form container on smaller screens */
+    }
+
+    label, input, select, button {
+        width: 80%; /* Wider elements on smaller screens */
+    }
+
+    h1 {
+        font-size: 2rem; /* Smaller header on smaller screens */
+    }
+
+    label {
+        font-size: 1.3rem; /* Slightly smaller labels on smaller screens */
+    }
+
+    input, select {
+        font-size: 1rem; /* Slightly smaller input text on smaller screens */
+    }
+
+    button {
+        font-size: 1.3rem; /* Slightly smaller button text on smaller screens */
+    }
+}
